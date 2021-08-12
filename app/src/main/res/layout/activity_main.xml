@@ -8,6 +8,63 @@
     android:background="@drawable/gradient_list"
     android:id="@+id/mainLayout">
 
+ <TextView
+     android:id="@+id/numerical_display"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:fontFamily="@font/number_font"
+     android:textSize="120sp"
+     android:text="@string/_0"
+     android:textAlignment="center"
+     android:padding="45dp"
+     android:textColor="@color/crayola_glowing_green"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="432dp"
+        android:backgroundTint="@color/add_button_background"
+        android:fontFamily="@font/button_font"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numerical_display" />
+
+    <Button
+        android:id="@+id/subtract_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="432dp"
+        android:backgroundTint="@color/subtract_button_background"
+        android:fontFamily="@font/button_font"
+        android:text="@string/sub"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numerical_display" />
+
+    <Button
+        android:id="@+id/reset_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:fontFamily="@font/button_font"
+        android:text="@string/reset"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:backgroundTint="#BFDBF7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numerical_display" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
